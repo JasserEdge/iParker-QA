@@ -16,7 +16,8 @@
                 ORDER BY parking_id desc limit 1";
         
         if(mysqli_query($conn, $sql)){ 
-	        header("Location:contactus.php");
+	        header("Location:parkingspots.php");
+	        exit();
         }else{
             header("Location:contactus.php");
             exit();
