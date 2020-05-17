@@ -101,6 +101,11 @@ $numOfSlots = 76 - mysqli_num_rows($data);
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script> 
+			if (location.href.indexOf('reload')==-1){
+				location.href=location.href+'?reload';
+			}
+			</script>
 
 	</body>
 </html>

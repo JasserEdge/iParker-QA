@@ -53,6 +53,7 @@
 	<head>
 		<title>iParker Management System</title>
 		<meta charset="utf-8" />
+		<meta http-equiv="refresh" content="30" >
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--Main CSS-->
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -149,7 +150,7 @@
 								<th><h4 style="color:white">Time-in</h4></th>
 								<th><h4 style="color:white">Time-out</h4></th>
 								<th><h4 style="color:white">Date</h4></th>
-								<th><button id="myBtn" class="button small special">Add a Vehicle</button></th>
+								<th></th>
 							</tr>
 							<?php
 								if($data) {
@@ -170,8 +171,9 @@
 								// mysqli_close($conn); //close connection
 							?>
 						</table>
+						<button id="myBtn" class="button special">Add a Vehicle</button>
 						</div>
-
+					
 				</div>
 				<div class="container">
 							<p>Number of Available slots:</p><p style="color:white"><?php echo $numOfSlots?></p>
