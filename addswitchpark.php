@@ -2,7 +2,7 @@
 	<head>
 		<title>iParker Light Switch Representation</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta id="viewport" content="width=device-width, initial-scale=1" />
 		<!--Main CSS-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/alert.css" />
@@ -28,111 +28,145 @@
                                 <div style="background: url('images/2ndflr.jpg'); border: 1px solid #ddd; border-radius: 4px; width:550px; height:486px; position: relative;">
                                 <div class="text"><p>2nd Floor Parking</p></div>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpotss" src='images/red.png' value="1-2nd" style="position: relative; top:65px; left:178px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="1-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:50px; left:190px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="2-2nd" style="position: relative; top:95px; left:154px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="2-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-38px; left:144px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="3-2nd" style="position: relative; top:90px; left:5px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="3-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-89px; left:-84px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="4-2nd" style="position: relative; top:130px; left:-20px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="4-2nd"> 
+                                    <input type="image" src='images/red.png' style="position: relative; top:-148px; left:-84px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="5-2nd" style="position: relative; top:158px; left:-45px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="5-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-238px; left:-210px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="6-2nd" style="position: relative; top:185px; left:-70px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="6-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-290px; left:-210px; width:15px; height:15px;">
                                 </form>
                                 
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="6-2nd" style="position: relative; top:225px; left:-95px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="7-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-350px; left:-210px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="7-2nd" style="position: relative; top:253px; left:-119px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="8-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-410px; left:-210px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="8-2nd" style="position: relative; top:282px; left:-143px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="9-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-460px; left:-210px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="9-2nd"  style="position: relative; top:310px; left:-168px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="10-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-520px; left:-210px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="10-2nd" style="position: relative; top:420px; left:-138px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="11-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-580px; left:-211px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="11-2nd" style="position: relative; top:420px; left:-133px; width:15px; height:15px;">
-                                </form>
-
-                                <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="12-2nd" style="position: relative; top:420px; left:-121px; width:15px; height:15px;">
-                                </form>
-                                <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="13-2nd" style="position: relative; top:420px; left:-117px; width:15px; height:15px;">
-                                </form>
-                                <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="14-2nd" style="position: relative; top:420px; left:-111px; width:15px; height:15px;">
-                                </form>
-                                <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="15-2nd" style="position: relative; top:420px; left:-108px; width:15px; height:15px;">
-                                </form>
-                                <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="16-2nd" style="position: relative; top:420px; left:-96px; width:15px; height:15px;">
-                                </form>
-                                <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="17-2nd" style="position: relative; top:420px; left:-93px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="12-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-640px; left:-211px; width:15px; height:15px;">
                                 </form>
 
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="18-2nd" style="position: relative; top:420px; left:-88px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="13-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-620px; left:-160px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="19-2nd" style="position: relative; top:420px; left:-84px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="14-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-708px; left:-133px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="20-2nd" style="position: relative; top:420px; left:-73px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="15-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-796px; left:-97px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="21-2nd" style="position: relative; top:420px; left:-70px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="16-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-885px; left:-70px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="22-2nd" style="position: relative; top:420px; left:-66px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="17-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-974px; left:-40px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="23-2nd" style="position: relative; top:325px; left:356px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="18-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-1062px; left:-13px; width:15px; height:15px;">
                                 </form>
 
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="24-2nd" style="position: relative; top:301px; left:333px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="19-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-1150px; left:23px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="25-2nd" style="position: relative; top:265px; left:310px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="20-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-1240px; left:50px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="26-2nd" style="position: relative; top:235px; left:285px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="21-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-1327px; left:78px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="27-2nd" style="position: relative; top:208px; left:261px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="22-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-1415px; left:107px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="28-2nd" style="position: relative; top:180px; left:238px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="23-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-1505px; left:142px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="29-2nd" style="position: relative; top:143px; left:215px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="24-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-1593px; left:169px; width:15px; height:15px;">
+                                </form>
+
+                                <form class="form" action="addparkspot.php" method="post">
+                                    <input type="hidden" name="parkingSpots" value="25-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-1680px; left:196px; width:15px; height:15px;">
+                                </form>
+                                <form class="form" action="addparkspot.php" method="post">
+                                    <input type="hidden" name="parkingSpots" value="26-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-1810px; left:235px; width:15px; height:15px;">
+                                </form>
+                                <form class="form" action="addparkspot.php" method="post">
+                                    <input type="hidden" name="parkingSpots" value="27-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-1925px; left:235px; width:15px; height:15px;">
+                                </form>
+                                <form class="form" action="addparkspot.php" method="post">
+                                    <input type="hidden" name="parkingSpots" value="28-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-2050px; left:235px; width:15px; height:15px;">
+                                </form>
+                                <form class="form" action="addparkspot.php" method="post">
+                                    <input type="hidden" name="parkingSpots" value="29-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-2165px; left:235px; width:15px; height:15px;">
+                                </form>
+                                <form class="form" action="addparkspot.php" method="post">
+                                    <input type="hidden" name="parkingSpots" value="30-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-2285px; left:235px; width:15px; height:15px;">
                                 </form>
                                     
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="30-2nd" style="position: relative; top:115px; left:190px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="31-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-2400px; left:235px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="31-2nd" style="position: relative; top:85px; left:165px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="32-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-2525px; left:235px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="32-2nd" style="position: relative; top:-30px; left:94px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="33-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-2640px; left:235px; width:15px; height:15px;">
                                 </form>
                                 <form class="form" action="addparkspot.php" method="post">
-                                    <input type="image" name="parkingSpots" src='images/red.png' value="33-2nd" style="position: relative; top:-30px; left:23px; width:15px; height:15px;">
+                                    <input type="hidden" name="parkingSpots" value="34-2nd">
+                                    <input type="image" src='images/red.png' style="position: relative; top:-2756px; left:235px; width:15px; height:15px;">
                                 </form>
                             </div>
                                 

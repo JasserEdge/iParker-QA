@@ -46,7 +46,6 @@
 				<ul>
 					<li><strong><p class="text-white">ADMIN</p></strong></li>	
 					<li><a href="index.php">Log out</a></li>					
-					<li><a href="options.php">Options</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -82,13 +81,7 @@
                                         <?php if($row['vehicle_type'] == "TRUCK"){ ?>
                                         selected
                                         <?php } ?>>TRUCK</option>
-                                </select></br>
-                                <p>Parking Spot:<br> 
-                                <input type="radio" name="floor" value="2nd"<?php if(substr($row['parking_spot'],3,7) == '2nd'){ echo "checked"; } ?> >2nd<br>
-                                <input type="radio" name="floor" value="4th" <?php if(substr($row['parking_spot'],3,7) == '4th'){ echo "checked"; } ?>>4th<br><br>
-                                <input type="number" name="parkingSpot" min="1" max="42" value="<?php echo substr($row['parking_spot'],0,2);?>" autocomplete="off"/></p></br>
-                                <p>Time Out: <input type="time" name="timeOut" value= "<?php echo $row['time_out'];?>" /></p>
-                                    
+                                </select></br>   
                                 <p><input class="button special" type='submit' value='Update Information'/><p>
                             </form>
 				    </footer>

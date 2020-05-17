@@ -1,7 +1,3 @@
-<?php
-session_start();
-
-?>
 <html>
 	<head>
 		<title>iParker Management System</title>
@@ -17,20 +13,7 @@ session_start();
 	</style>
 	</head>
 	<body class="landing">
-		<?php
-			if ($_SESSION['idnumber'] == 1){
-				echo "<div class=\"alert align-center fixed-top\">
-						<span class=\"closebtn\" onclick=\"this.parentElement.style.display='none';\">&times;</span>
-						<strong>Invalid Student ID!</strong> Student ID is not registered in system.
-						</div> ";
-			}
-			if ($_SESSION['idnumber'] == 2){
-				echo "<div class=\"alert success align-center fixed-top\">
-						<span class=\"closebtn\" onclick=\"this.parentElement.style.display='none';\">&times;</span>
-						<strong>Successfully Logged Student into iAcademy System!</strong>
-						</div> ";
-			}
-		?>
+		
 		<!-- Header -->
 		<header id="header" class="alt">
 			<h1><a href="options.php"><img class= "logo" src="images/logo.png" alt="no image" /><strong><a href="options.php">iParker iAcademy</a></strong></a></h1>
