@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+$_SESSION['edit'] = 0;
+$_SESSION['vehicle'] = 0;
+$_SESSION['delete'] = 0;
+
 $servername = "localhost";
 $username = "root";
 $password = "";

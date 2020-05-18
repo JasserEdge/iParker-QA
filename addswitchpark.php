@@ -171,7 +171,6 @@
                             </div>
                                 
                         </div> 
-
                             <div class="mySlides fade">
                                 <div style="background: url('images/4thflr.jpg'); border: 1px solid #ddd; border-radius: 4px; width:550px; height:486px; position: relative;">
                                     <div class="text"><p>4th Floor Parking</p></div>
