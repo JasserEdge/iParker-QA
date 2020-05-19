@@ -56,14 +56,7 @@ $numOfSlots = 76 - mysqli_num_rows($data);
 			
 		<!-- Banner -->
 		<section id="banner">
-			<div class="feature-grid">
-				<!--<div class="feature">-->
-					<div class="slot-container">
-						<h2>NUMBER OF AVAILABLE PARKING SLOTS:<p style="color:red"><?php echo $numOfSlots?></p></h2>
-						<a href="parkingspots.php" class="button special">View</a>
-					</div>
-				<!--</div>-->
-				<!--<div class="feature">
+				<div class="feature">
 					<div class="containersmall box center">
 						<header class="align-center">
 							<h2>Log In</h2>
@@ -76,8 +69,8 @@ $numOfSlots = 76 - mysqli_num_rows($data);
 							</form>
 						</footer>			
 					</div>
-				</div>-->
-			</div>
+				</div>
+			
 		</section>
 		<!-- Footer -->
 		<?php include "footer.php"; ?>

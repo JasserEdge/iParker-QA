@@ -46,7 +46,7 @@
 					.appendTo($body);
 
 			// Navigation Panel.
-				$(
+				/*$(
 					'<div id="navPanel">' +
 						$('#nav').html() +
 						'<a href="#navPanel" class="close"></a>' +
@@ -66,7 +66,7 @@
 				if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
 					$('#navPanel')
 						.css('transition', 'none');
-
+*/
 
 	});
 

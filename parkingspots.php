@@ -94,7 +94,7 @@
 ?> 
 <html>
 	<head>
-		<title>iParker Management System</title>
+		<title>Parking Slot Detection</title>
         <meta http-equiv="refresh" content="5" >
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -105,19 +105,13 @@
 	</head>
 	<body class="landing">
 		<!-- Header -->
-		<header id="header" class="alt">
-			<h1><img class= "logo" src="images/logo.png" alt="no image" /><strong><a href="">iParker iAcademy</a></strong></h1>
-			
-		</header>
-
-		<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-		
-		
+		<?php include "header.php"; ?>
+	
 		<!-- Banner -->
 			<section id="banner" class="wrapper style1">
 				<div class="container">
-					<header class="major special">
-						<h2>Available Parking Spots<h2>
+					<header class="slot-container">
+                        <h2>Available Parking Slots<h2>
 
                         <div class="slideshow-container">
                             <div class="mySlides fade">
@@ -678,28 +672,19 @@
                             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides(1)">&#10095;</a>
                         </div>
-
-                        <br><p><button onclick="goBack()" class="button special">Go Back</button></div>
-					</header>
-
-                    <footer>
-                        
-                    </footer>
-					
+                    </header>
+                    
+                    <button onclick="goBack()" class="button special">Go Back</button>
 				</div>
 			</section>
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="copyright">
-					&copy; iParker. All rights reserved.
-				</div>
-			</footer>
+        <?php include "footer.php"; ?>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>	
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/main.js"></script> 
 
             <script>
                 var slideIndex = 1;
