@@ -18646,7 +18646,7 @@ a.btn-icon-only {
 }
 
 .footer {
-  background: #f4f5f7;
+  /*background: #f4f5f7;*/
   padding: 1.5rem 0;
 }
 
@@ -24321,4 +24321,14 @@ pre>code.highlight {
   bottom: 0;
 }
 
+.parking-image {
+    width: 320px;
+    height: 320px;
+}
+
+.parking-image > img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
 /*# sourceMappingURL=kit-free.css.map */

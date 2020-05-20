@@ -38,10 +38,10 @@ $numOfSlots = 76 - mysqli_num_rows($data);
 		<?php include 'nav.php' ?>
 
 		<div class="section section-components">
-			<div class="container mt-8">
-				<div class="column align-content-center">
-					<h1 class="mb-0">Number of Available Parking Slots:<h2><?php echo $numOfSlots?></h2></h1>
-					<a href="parkingspots.php" class="btn btn-primary" type="button">View</a>
+			<div class="container">
+				<div class="column align-content-center text-center">
+					<h1 class="mb-0">Number of Available Parking Slots:<h1 class="display-1 mb-0"><?php echo $numOfSlots?></h1></h1>
+					<a href="parkingspots.php" class="btn btn-primary btn-lg" type="button">View Parking Lot</a>
 				</div>
 			</div>
 		</div>
