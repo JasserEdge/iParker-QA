@@ -98,7 +98,7 @@
 	</head>
         
 	<body>
-		<!-- Header -->
+		<!-- Navbar primary -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 			<div class="container">
 				<a class="navbar-brand" href="index.php">Parking Slot Detection</a>
@@ -714,35 +714,38 @@
                     <button onclick="goBack()" class="button special">Go Back</button>
 				</div>
             </section> -->
-            <h2>Available Parking Slots<h2>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/2ndflr.jpg" style="height:486px;" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/2ndflr.jpg" style="height:486px;" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="images/2ndflr.jpg" style="height:486px;" alt="Third slide">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
 
-            <?php include 'footer.php' ?>
+        <h2>Available Parking Slots<h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/2ndflr.jpg" style="height:486px;" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/2ndflr.jpg" style="height:486px;" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/2ndflr.jpg" style="height:486px;" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <?php include 'footer.php' ?>
+
+        <?php include 'scripts.php' ?> 
 		
 		<!-- Scripts 
 			<script src="assets/js/jquery.min.js"></script>	
@@ -777,41 +780,5 @@
                 slides[slideIndex-1].style.display = "block";  
                 }
             </script>-->
-
-            <!--   Core JS Files   -->
-		<script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
-		<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
-		<script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-		<script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-		<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-		<script src="./assets/js/plugins/bootstrap-switch.js"></script>
-		<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-		<script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-		<script src="./assets/js/plugins/moment.min.js"></script>
-		<script src="./assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
-		<script src="./assets/js/plugins/bootstrap-datepicker.min.js"></script>
-		<!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
-		<!--  Google Maps Plugin    -->
-		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-		<script src="./assets/js/argon-design-system.min.js?v=1.2.0" type="text/javascript"></script>
-		<script>
-			function scrollToDownload() {
-
-			if ($('.section-download').length != 0) {
-				$("html, body").animate({
-				scrollTop: $('.section-download').offset().top
-				}, 1000);
-			}
-			}
-		</script>
-		<script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
-		<script>
-			window.TrackJS &&
-			TrackJS.install({
-				token: "ee6fab19c5a04ac1a32a645abde4613a",
-				application: "argon-design-system-pro"
-			});
-		</script>
-
 	</body>
 </html>

@@ -18540,11 +18540,12 @@ a.btn-icon-only {
 }
 
 .custom-toggle input:checked+.custom-toggle-slider {
-  border: 1px solid #5e72e4;
+  /*border: 1px solid #5e72e4;*/
+  border: 1px solid #5CB709;
 }
 
 .custom-toggle input:checked+.custom-toggle-slider:before {
-  background: #5e72e4;
+  background: #5CB709;
   transform: translateX(1.625rem);
 }
 
@@ -18577,8 +18578,8 @@ a.btn-icon-only {
   content: "";
   height: 18px;
   width: 18px;
-  left: 2px;
-  bottom: 2px;
+  left: 1px;
+  bottom: 3px;
   border-radius: 50% !important;
   background-color: #ddd;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
