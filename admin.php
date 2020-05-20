@@ -29,15 +29,10 @@ $numOfSlots = 76 - mysqli_num_rows($data);
 ?> 
 <html>
 	<head>
-		<title>Parking Slot Detection</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--Main CSS-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/alert.css" />
-	
+		<?php include "head.php"; ?>
 	</head>
-	<body class="landing">
+
+	<body>
 		<?php
 			if ($_SESSION['login'] == 1){
 				echo "<div class=\"alert align-center fixed-top\">
@@ -49,12 +44,12 @@ $numOfSlots = 76 - mysqli_num_rows($data);
 
 			
 		?>
-		<!-- Header -->
-		<?php include "header.php"; ?>
+		<!-- Nav -->
+		<?php include 'nav.php' ?>
 
 		<!--<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>-->
 			
-		<!-- Banner -->
+		<!-- Banner 
 		<section id="banner">
 				<div class="feature">
 					<div class="containersmall box center">
@@ -71,21 +66,84 @@ $numOfSlots = 76 - mysqli_num_rows($data);
 					</div>
 				</div>
 			
-		</section>
-		<!-- Footer -->
-		<?php include "footer.php"; ?>
+		</section> -->
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script> 
-			if (location.href.indexOf('reload')==-1){
-				location.href=location.href+'?reload';
-			}
-			</script>
+		<section class="section section-shaped section-lg">
+			<div class="shape shape-style-1 bg-gradient-default">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="container pt-lg-7">
+				<div class="row justify-content-center">
+					<div class="col-lg-5">
+						<div class="card bg-secondary shadow border-0">
+							<div class="card-body px-lg-5 py-lg-5">
+								<div class="text-center text-muted mb-4">
+									<h3>Login</h3>
+								</div>
+								<form role="form">
+									<div class="form-group mb-3">
+										<div class="input-group input-group-alternative">
+											<div class="input-group-prepend">
+												<span class="input-group-text"><i class="ni ni-email-83"></i></span>
+											</div>
+											<input class="form-control" placeholder="Email" type="email">
+										</div>
+									</div>
+									<div class="form-group focused">
+										<div class="input-group input-group-alternative">
+											<div class="input-group-prepend">
+												<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+											</div>
+											<input class="form-control" placeholder="Password" type="password">
+										</div>
+									</div>
+									<div class="custom-control custom-control-alternative custom-checkbox">
+										<input class="custom-control-input" id=" customCheckLogin" type="checkbox">
+										<label class="custom-control-label" for=" customCheckLogin"><span>Remember me</span></label>
+									</div>
+									<div class="text-center">
+										<button type="button" class="btn btn-primary my-4">Sign in</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-6">
+								<a href="#" class="text-light"><small>Forgot password?</small></a>
+							</div>
+							<div class="col-6 text-right">
+								<a href="#" class="text-light"><small>Create new account</small></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	  </section>
+	  
+	<!-- Footer -->
+	<?php include "footer.php"; ?>
+
+	<!-- Scripts 
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script> 
+		if (location.href.indexOf('reload')==-1){
+			location.href=location.href+'?reload';
+		}
+		</script> -->
+
+	<!-- Scripts -->
+	<?php include 'scripts.php' ?> 
 
 	</body>
 </html>

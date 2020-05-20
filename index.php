@@ -27,72 +27,76 @@ $data = @mysqli_query($conn, $query);
 
 $numOfSlots = 76 - mysqli_num_rows($data);
 ?> 
+
 <html>
 	<head>
-		<title>Parking Slot Detection</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--Main CSS-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/alert.css" />
-	
+		<?php include 'head.php' ?>
 	</head>
-	<body class="landing">
-		<?php
-			if ($_SESSION['login'] == 1){
-				echo "<div class=\"alert align-center fixed-top\">
-						<span class=\"closebtn\" onclick=\"this.parentElement.style.display='none';\">&times;</span> 
-						<strong>Invalid Login!</strong> Email or password might be incorrect. Please try again.
-						</div> ";
-			}
-			$_SESSION['login'] = 0;
 
-			
-		?>
-		<!-- Header -->
-		<?php include "header.php"; ?>
+	<body>
+		
+		<!-- Navbar primary -->
+		<?php include 'nav.php' ?>
 
-		<!--<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>-->
-			
-		<!-- Banner -->
-		<section id="banner">
-			<div class="feature-grid">
-				<!--<div class="feature">-->
-					<div class="slot-container">
-						<h2>NUMBER OF AVAILABLE PARKING SLOTS:<p style="color:red"><?php echo $numOfSlots?></p></h2>
-						<a href="parkingspots.php" class="button special">View</a>
-					</div>
-				<!--</div>-->
-				<!--<div class="feature">
-					<div class="containersmall box center">
-						<header class="align-center">
-							<h2>Log In</h2>
-						</header>
-						<footer class="align-center">
-							<form class=" form" action="login.php" method="post">
-								<input type="email" name="email" required="required" placeholder="Email" autocomplete="off"/></br>
-								<input type="password" name="password" required="required" placeholder="Password" autocomplete="off"/></br>
-								<p><input class="button special" type='submit' value='Login'/><p>
-							</form>
-						</footer>			
-					</div>
-				</div>-->
+		<div class="section section-components">
+			<div class="container mt-8">
+				
+				<div class="column align-content-center">
+					<h1 class="mb-0">Number of Available Parking Slots:<h2><?php echo $numOfSlots?></h2></h1>
+					<a href="parkingspots.php" class="btn btn-primary" type="button">View</a>
+				</div>
+				
+					
+					
+				
 			</div>
-		</section>
-		<!-- Footer -->
-		<?php include "footer.php"; ?>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script> 
-			if (location.href.indexOf('reload')==-1){
-				location.href=location.href+'?reload';
-			}
-			</script>
-
+		</div>
+		
+		<!--<div class="wrapper">
+			<div class="section section-hero section-shaped">
+				<div class="shape shape-style-3 shape-default">
+					<span class="span-150"></span>
+					<span class="span-50"></span>
+					<span class="span-50"></span>
+					<span class="span-75"></span>
+					<span class="span-100"></span>
+					<span class="span-75"></span>
+					<span class="span-50"></span>
+					<span class="span-100"></span>
+					<span class="span-50"></span>
+					<span class="span-100"></span>
+				</div>
+				<div class="page-header">
+					<div class="container shape-container d-flex align-items-center py-lg">
+					<div class="col px-0">
+						<div class="row align-items-center justify-content-center">
+						<div class="col-lg-6 text-center">
+							<h1 class="text-white display-1">Number of Available Parking Slots:</h1>
+							<h2 class="display-4 font-weight-normal text-white"></h2>
+							<div class="btn-wrapper mt-4">
+							<a href="parkingspots.php" class="btn btn-warning btn-icon mt-3 mb-sm-0">
+								View
+							</a>
+							</div>
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="separator separator-bottom separator-skew zindex-100">
+					<svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+					<polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+					</svg>
+				</div>
+			</div>
+			</div>-->
+			
+    <!-- Footer -->
+	<?php include "footer.php"; ?>
+	
+	<!-- Scripts -->
+	<?php include 'scripts.php' ?> 
+		
 	</body>
+	
 </html>

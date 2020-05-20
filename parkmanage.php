@@ -62,7 +62,8 @@
 		<link rel="stylesheet" href="assets/css/modal.css" />
 		<!--Font Awesome Icons-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+		
+		<?php include 'head.php' ?>
 
 
 	</head>
@@ -113,17 +114,7 @@
 
 		?>
 		<!-- Header -->
-		<header id="header" class="alt">
-			<h1><img class= "logo" src="images/logo.png" alt="no image" /><strong><a href="options.php">iParker iAcademy</a></strong></h1>
-			<nav id="nav">
-				<ul>
-					<li><strong><p class="text-white">ADMIN</p></strong></li>
-					<li><a href="index.php">Log out</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+		<?php include 'nav.php' ?>
 
 
 		<!-- Banner -->
@@ -201,11 +192,8 @@
 
 
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="copyright">
-					&copy; iParker. All rights reserved.
-				</div>
-			</footer>
+		<?php include "footer.php"; ?>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -240,5 +228,6 @@
 				}
 			</script>
 
+			<?php include 'scripts.php' ?> 
 	</body>
 </html>
