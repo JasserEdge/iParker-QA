@@ -5,7 +5,7 @@
   <link rel="icon" type="image/png" href="assets-table/assets/img/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title>Fresh Bootstrap Table by Creative Tim</title>
+  <title>iParker Mangement Log</title>
 
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
@@ -22,19 +22,6 @@
   <meta itemprop="description" content="Probably the most beautiful and complex bootstrap table you've ever seen on the internet, this bootstrap table is one of the essential plugins you will need.">
 
   <meta itemprop="image" content="http://s3.amazonaws.com/creativetim_bucket/products/31/original/opt_fbt_thumbnail.jpg">
-  <!-- Twitter Card data -->
-
-  <meta name="twitter:card" content="product">
-  <meta name="twitter:site" content="@creativetim">
-  <meta name="twitter:title" content="Fresh Bootstrap Table by Creative Tim">
-
-  <meta name="twitter:description" content="Probably the most beautiful and complex bootstrap table you've ever seen on the internet, this bootstrap table is one of the essential plugins you will need.">
-  <meta name="twitter:creator" content="@creativetim">
-  <meta name="twitter:image" content="http://s3.amazonaws.com/creativetim_bucket/products/31/original/opt_fbt_thumbnail.jpg">
-  <meta name="twitter:data1" content="Fresh Bootstrap Table by Creative Tim">
-  <meta name="twitter:label1" content="Product Type">
-  <meta name="twitter:data2" content="Free">
-  <meta name="twitter:label2" content="Price">
 
   <!-- Open Graph data -->
   <meta property="og:title" content="Fresh Bootstrap Table by Creative Tim" />

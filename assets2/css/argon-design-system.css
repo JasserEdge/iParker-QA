@@ -4683,6 +4683,7 @@ input[type="button"].btn-block {
 }
 
 .nav {
+  color: #42a5ff;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
