@@ -52,16 +52,16 @@
 <html>
 	<head>
 		<title>iParker Management System</title>
-		<meta charset="utf-8" />
+		<!-- <meta charset="utf-8" />
 		<meta http-equiv="refresh" content="30" >
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--Main CSS-->
+		Main CSS
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/alert.css" />
 		<link rel="stylesheet" href="assets/css/button.css" />
 		<link rel="stylesheet" href="assets/css/modal.css" />
-		<!--Font Awesome Icons-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		Font Awesome Icons
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 		
 		<?php include 'head.php' ?>
 
@@ -148,8 +148,6 @@
 									while($row = @mysqli_fetch_array($data)){ ?>
 										<tr><td><?php echo $row['parking_id'];?></td>
 										<td> <?php echo $row['license_plate'];?></td>
-										<td> <?php echo $row['vehicle_type'];?></td>
-										<td> <?php echo $row['parking_spot'];?></td>
 										<td> <?php echo $row['time_in'];?></td>
 										<td> <?php echo $row['time_out'];?></td>
 										<td> <?php echo $row['date'];?></td>
