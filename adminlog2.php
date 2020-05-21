@@ -4,11 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-<<<<<<< HEAD
   <title>iParker Mangement Log</title>
-=======
-  <title>iParker</title>
->>>>>>> c7070d5e5ab9f3142e0ae0927c8a1d9955f695d4
 
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
