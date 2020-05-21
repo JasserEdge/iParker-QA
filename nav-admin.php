@@ -26,10 +26,10 @@
         <ul class="navbar-nav ml-lg-auto">
             <li class="nav-item">
                 <a class="nav-link" href="adminlog2.php">Management Log
-                <span class="sr-only">(current)</span>
+                <!-- <span class="sr-only">(current)</span> -->
                 </a>
             </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link" href="javascript:;">Profile</a>
         </li>
         <li class="nav-item dropdown">
@@ -40,7 +40,7 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="javascript:;">Something else here</a>
             </div>
-        </li>
+        </li> -->
         </ul>
     </div>
     </div>

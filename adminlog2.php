@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Mangement Log</title>
+    <title>Management Log</title>
 
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
@@ -227,6 +227,9 @@
   </div>
 </div>
 
+
+<!-- Footer -->
+<?php include "footer.php"; ?>
 </body>
   <script type="text/javascript">
     var $table = $('#fresh-table')

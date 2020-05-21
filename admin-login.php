@@ -1,49 +1,10 @@
-<?php
-session_start();
 
-$_SESSION['edit'] = 0;
-$_SESSION['vehicle'] = 0;
-$_SESSION['delete'] = 0;
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "softeng-iparker-db";
-//create connection
-	
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-//check connection
-	
-if(!$conn){
-	die("Connection Failed:" . mysqli_connect_error());
-}
-	
-//get data
-//get all information from  table
-	
-$query="SELECT * from vehicles";
-//run the query and store data in a variable
-$data = @mysqli_query($conn, $query);
-
-$numOfSlots = 76 - mysqli_num_rows($data);
-?> 
 <html>
 	<head>
 		<?php include "head.php"; ?>
 	</head>
 
 	<body>
-		<?php
-			if ($_SESSION['login'] == 1){
-				echo "<div class=\"alert align-center fixed-top\">
-						<span class=\"closebtn\" onclick=\"this.parentElement.style.display='none';\">&times;</span> 
-						<strong>Invalid Login!</strong> Email or password might be incorrect. Please try again.
-						</div> ";
-			}
-			$_SESSION['login'] = 0;
-
-			
-		?>
 		<!-- Nav -->
 		<?php include 'nav.php' ?>
 

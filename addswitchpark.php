@@ -4,12 +4,11 @@
     </head>
     
 	<body>
-        
 		<!-- Navbar primary -->
         <?php include 'nav-admin.php' ?>
 
         <div class="container mr-auto ml-auto mt-5 mb-6">
-            <h1>Mga Switch</h1>
+            <h1>Simulated Hardware Switch</h1>
         </div>
         
         <!-- Toggle buttons -->

@@ -4,7 +4,7 @@
             <a href="index.php"><img class="img-fluid" src="images/logo.png" href="index.php"></a>
         </figure>
        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-primary">
@@ -22,8 +22,8 @@
                         </button>
                     </div>
                 </div>
-            </div>
-            <ul class="navbar-nav ml-lg-auto">
+            </div> -->
+            <!-- <ul class="navbar-nav ml-lg-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="javascript:;">Discover
                     <span class="sr-only">(current)</span>
@@ -41,7 +41,7 @@
                         <a class="dropdown-item" href="javascript:;">Something else here</a>
                     </div>
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </div>
 </nav>

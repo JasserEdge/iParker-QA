@@ -13,84 +13,6 @@
 	
 	//get data
 	//get all information from  table
-    $query = array(
-        "SELECT * from vehicles WHERE parking_spot='1-2nd'", 
-        "SELECT * from vehicles WHERE parking_spot='2-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='3-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='4-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='5-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='6-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='7-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='8-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='9-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='10-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='11-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='12-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='13-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='14-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='15-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='16-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='17-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='18-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='19-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='20-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='21-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='22-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='23-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='24-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='25-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='26-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='27-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='28-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='29-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='30-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='31-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='32-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='33-2nd'",
-        "SELECT * from vehicles WHERE parking_spot='34-2nd'");
-    $query0 = array(
-        "SELECT * from vehicles WHERE parking_spot='1-4th'", 
-        "SELECT * from vehicles WHERE parking_spot='2-4th'",
-        "SELECT * from vehicles WHERE parking_spot='3-4th'",
-        "SELECT * from vehicles WHERE parking_spot='4-4th'",
-        "SELECT * from vehicles WHERE parking_spot='5-4th'",
-        "SELECT * from vehicles WHERE parking_spot='6-4th'",
-        "SELECT * from vehicles WHERE parking_spot='7-4th'",
-        "SELECT * from vehicles WHERE parking_spot='8-4th'",
-        "SELECT * from vehicles WHERE parking_spot='9-4th'",
-        "SELECT * from vehicles WHERE parking_spot='10-4th'",
-        "SELECT * from vehicles WHERE parking_spot='11-4th'",
-        "SELECT * from vehicles WHERE parking_spot='12-4th'",
-        "SELECT * from vehicles WHERE parking_spot='13-4th'",
-        "SELECT * from vehicles WHERE parking_spot='14-4th'",
-        "SELECT * from vehicles WHERE parking_spot='15-4th'",
-        "SELECT * from vehicles WHERE parking_spot='16-4th'",
-        "SELECT * from vehicles WHERE parking_spot='17-4th'",
-        "SELECT * from vehicles WHERE parking_spot='18-4th'",
-        "SELECT * from vehicles WHERE parking_spot='19-4th'",
-        "SELECT * from vehicles WHERE parking_spot='20-4th'",
-        "SELECT * from vehicles WHERE parking_spot='21-4th'",
-        "SELECT * from vehicles WHERE parking_spot='22-4th'",
-        "SELECT * from vehicles WHERE parking_spot='23-4th'",
-        "SELECT * from vehicles WHERE parking_spot='24-4th'",
-        "SELECT * from vehicles WHERE parking_spot='25-4th'",
-        "SELECT * from vehicles WHERE parking_spot='26-4th'",
-        "SELECT * from vehicles WHERE parking_spot='27-4th'",
-        "SELECT * from vehicles WHERE parking_spot='28-4th'",
-        "SELECT * from vehicles WHERE parking_spot='29-4th'",
-        "SELECT * from vehicles WHERE parking_spot='30-4th'",
-        "SELECT * from vehicles WHERE parking_spot='31-4th'",
-        "SELECT * from vehicles WHERE parking_spot='32-4th'",
-        "SELECT * from vehicles WHERE parking_spot='33-4th'",
-        "SELECT * from vehicles WHERE parking_spot='34-4th'",
-        "SELECT * from vehicles WHERE parking_spot='35-4th'",
-        "SELECT * from vehicles WHERE parking_spot='36-4th'",
-        "SELECT * from vehicles WHERE parking_spot='37-4th'",
-        "SELECT * from vehicles WHERE parking_spot='38-4th'",
-        "SELECT * from vehicles WHERE parking_spot='39-4th'",
-        "SELECT * from vehicles WHERE parking_spot='40-4th'",
-        "SELECT * from vehicles WHERE parking_spot='41-4th'",
-        "SELECT * from vehicles WHERE parking_spot='42-4th'");
 ?> 
 <html>
     <head>
@@ -157,7 +79,7 @@
                     <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h6 class="modal-title" id="modal-title-default">Thank you for using iParker!</h6>
+                                <h4 class="modal-title" id="modal-title-default">Thank you for using iParker!</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                                 </button>
