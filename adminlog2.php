@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="images/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
   <title>iParker Mangement Log</title>
@@ -53,7 +54,11 @@
    
 
 <div class="wrapper">
-  
+<div class="logo-container">
+      <div>
+        <img src="images/logo.png" style="width:50">
+      </div>
+    </div>
 
   <div class="container">
     <div class="row">
