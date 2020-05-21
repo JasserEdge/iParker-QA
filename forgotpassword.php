@@ -27,20 +27,28 @@
                 }
             ?>
             
-            <div class="col-lg-4 col-sm-6 m-auto">
-                <h4>Forgot your password?</h4>
-                <small class="font-weight-bold">Enter your email and we'll send you a link to reset your password</small>
-                <form id="login-form" method="post" action="forgotPasswordValidation.php" class="form-group">
-                    <input name="email" type="email" placeholder="Email" class="form-control" required/>
-                    <button type="submit" name="forgot_password" id="submit" class="ml-1 btn btn-primary btn-lg">Send link</button>
-                </form>
-
-                <!-- PAG INVALID EMAIL IDK PA HOW APPLY DIS HAHA -->
-                <!--<div class="form-group has-danger">
-                    <input type="email" placeholder="Error Input" class="form-control is-invalid" />
-                </div>-->
-            </div>
-        </div>
+            <section class="section section-shaped section-lg">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5">
+                            <div class="card bg-secondary shadow border-0">
+                                <div class="card-body px-lg-5 py-lg-5">
+                                    <div class="text-center text-muted mb-4">
+                                        <h3>Password Reset</h3>
+                                        <small class="font-weight-bold">Enter your email and we'll send you a link to reset your password</small>
+                                    </div>
+                                    <form id="login-form" method="post" action="forgotPasswordValidation.php" class="form-group d-flex flex-column align-items-center">
+                                        <input name="email" type="email" placeholder="Email" class="form-control" required/>
+                                        <span id = "submitError" style ="color:red"></span>
+                                        <button type="submit" name="forgot_password" id="submit" class="ml-1 btn btn-primary btn-lg mt-4">Send link</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      
 
         <!-- Footer -->
 		<?php include "footer.php"; ?>
