@@ -1,7 +1,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-        <a class="navbar-brand" href="index.php">iParker</a>
+        <figure style="width:68px">
+            <a href="index.php"><img class="img-fluid" src="images/logo.png" href="index.php"></a>
+        </figure>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
