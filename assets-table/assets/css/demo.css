@@ -382,9 +382,9 @@ h1 small{
 
 .logo-container .logo{
     overflow: hidden;
-    border-radius: 50%;
-    border: 1px solid #333333;
-    width: 60px;
+    /*border-radius: 50%;
+    border: 1px solid #333333;*/
+    width: 68px;
     float: left;
 }
 .logo-container .brand{

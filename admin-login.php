@@ -70,7 +70,7 @@ $numOfSlots = 76 - mysqli_num_rows($data);
 
 		<section class="section section-shaped section-lg">
 			
-			<div class="container pt-lg-7">
+			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-5">
 						<div class="card bg-secondary shadow border-0">
