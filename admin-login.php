@@ -69,16 +69,7 @@ $numOfSlots = 76 - mysqli_num_rows($data);
 		</section> -->
 
 		<section class="section section-shaped section-lg">
-			<div class="shape shape-style-1 bg-gradient-default">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
+			
 			<div class="container pt-lg-7">
 				<div class="row justify-content-center">
 					<div class="col-lg-5">
@@ -101,12 +92,12 @@ $numOfSlots = 76 - mysqli_num_rows($data);
 											<div class="input-group-prepend">
 												<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 											</div>
-											<input class="form-control" placeholder="Password" type="password">
+											<input class="form-control text" placeholder="Password" type="password">
 										</div>
 									</div>
 									<div class="custom-control custom-control-alternative custom-checkbox">
-										<input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-										<label class="custom-control-label" for=" customCheckLogin"><span>Remember me</span></label>
+										<input class="custom-control-input" id="customCheckLogin" type="checkbox">
+										<label class="custom-control-label" for="customCheckLogin"><span>Remember me</span></label>
 									</div>
 									<div class="text-center">
 										<button type="button" class="btn btn-primary my-4">Sign in</button>
@@ -116,10 +107,10 @@ $numOfSlots = 76 - mysqli_num_rows($data);
 						</div>
 						<div class="row mt-3">
 							<div class="col-6">
-								<a href="#" class="text-light"><small>Forgot password?</small></a>
+								<a href="#" class="text"><small>Forgot password?</small></a>
 							</div>
 							<div class="col-6 text-right">
-								<a href="#" class="text-light"><small>Create new account</small></a>
+								<a href="#" class="text"><small>Create new account</small></a>
 							</div>
 						</div>
 					</div>
