@@ -5,12 +5,13 @@
     <body>
         <?php include 'nav.php'?>
         <h1 style="text-align: center;">iParker Managemanet Log</h1>
+        <input type="text" class="search" id="myInput" onkeyup="myFunction()" placeholder="Search...">
   <div style="
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;">
-  <table class="table-kiara" id="data">
-    <thead>
+  <table class="table" id="data">
+    <thead >
       <th data-field="id">ID</th>
       <th data-field="name">License Plate</th>
       <th data-field="salary">Time-in</th>
@@ -155,7 +156,7 @@
     </table>
     </div>
     <?php include 'scripts.php' ?>
-    <script>
+    <!-- <script>
     $(document).ready(function(){
     $('#data').after('<div id="nav"></div>');
     var rowsShown = 8;
@@ -179,6 +180,10 @@
         css('display','table-row').animate({opacity:1}, 300);
     });
 });
-    </script>
+
+// search
+
+    </script> -->
+    <?php include 'searchScript.php'?>
     </body>
 </html>
