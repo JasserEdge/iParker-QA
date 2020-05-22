@@ -29,6 +29,11 @@
                 <!-- <span class="sr-only">(current)</span> -->
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="adminlog2.php">Logout
+                <!-- <span class="sr-only">(current)</span> -->
+                </a>
+            </li>
         <!-- <li class="nav-item">
             <a class="nav-link" href="javascript:;">Profile</a>
         </li>

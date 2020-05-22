@@ -1,75 +1,81 @@
-
-<?php 
+<?php
 include("dbConnection.php");
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="images/favicon.ico">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Management Log</title>
+  <title>Management Log</title>
 
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
-    <!-- Canonical SEO -->
-    <link rel="canonical" href="https://www.creative-tim.com/product/fresh-bootstrap-table"/>
+  <!-- Canonical SEO -->
+  <link rel="canonical" href="https://www.creative-tim.com/product/fresh-bootstrap-table"/>
 
-    <!--  Social tags    -->
-    <meta name="keywords" content="creative tim, html table, html css table, web table, freebie, free bootstrap table, bootstrap, css3 table, bootstrap table, fresh bootstrap table, frontend, modern table, responsive bootstrap table, responsive bootstrap table">
+  <!--  Social tags    -->
+  <meta name="keywords" content="creative tim, html table, html css table, web table, freebie, free bootstrap table, bootstrap, css3 table, bootstrap table, fresh bootstrap table, frontend, modern table, responsive bootstrap table, responsive bootstrap table">
 
-    <meta name="description" content="Probably the most beautiful and complex bootstrap table you've ever seen on the internet, this bootstrap table is one of the essential plugins you will need.">
+  <meta name="description" content="Probably the most beautiful and complex bootstrap table you've ever seen on the internet, this bootstrap table is one of the essential plugins you will need.">
 
-    <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="Fresh Bootstrap Table by Creative Tim">
-    <meta itemprop="description" content="Probably the most beautiful and complex bootstrap table you've ever seen on the internet, this bootstrap table is one of the essential plugins you will need.">
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="Fresh Bootstrap Table by Creative Tim">
+  <meta itemprop="description" content="Probably the most beautiful and complex bootstrap table you've ever seen on the internet, this bootstrap table is one of the essential plugins you will need.">
 
-    <meta itemprop="image" content="http://s3.amazonaws.com/creativetim_bucket/products/31/original/opt_fbt_thumbnail.jpg">
+  <meta itemprop="image" content="http://s3.amazonaws.com/creativetim_bucket/products/31/original/opt_fbt_thumbnail.jpg">
+  <!-- Twitter Card data -->
 
-    <!-- Open Graph data -->
-    <meta property="og:title" content="Fresh Bootstrap Table by Creative Tim" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://wenzhixin.github.io/fresh-bootstrap-table/compact-table.html" />
-    <meta property="og:image" content="http://s3.amazonaws.com/creativetim_bucket/products/31/original/opt_fbt_thumbnail.jpg"/>
-    <meta property="og:description" content="Probably the most beautiful and complex bootstrap table you've ever seen on the internet, this bootstrap table is one of the essential plugins you will need." />
-    <meta property="og:site_name" content="Creative Tim" />
+  <meta name="twitter:card" content="product">
+  <meta name="twitter:site" content="@creativetim">
+  <meta name="twitter:title" content="Fresh Bootstrap Table by Creative Tim">
+
+  <meta name="twitter:description" content="Probably the most beautiful and complex bootstrap table you've ever seen on the internet, this bootstrap table is one of the essential plugins you will need.">
+  <meta name="twitter:creator" content="@creativetim">
+  <meta name="twitter:image" content="http://s3.amazonaws.com/creativetim_bucket/products/31/original/opt_fbt_thumbnail.jpg">
+  <meta name="twitter:data1" content="Fresh Bootstrap Table by Creative Tim">
+  <meta name="twitter:label1" content="Product Type">
+  <meta name="twitter:data2" content="Free">
+  <meta name="twitter:label2" content="Price">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Fresh Bootstrap Table by Creative Tim" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://wenzhixin.github.io/fresh-bootstrap-table/compact-table.html" />
+  <meta property="og:image" content="http://s3.amazonaws.com/creativetim_bucket/products/31/original/opt_fbt_thumbnail.jpg"/>
+  <meta property="og:description" content="Probably the most beautiful and complex bootstrap table you've ever seen on the internet, this bootstrap table is one of the essential plugins you will need." />
+  <meta property="og:site_name" content="Creative Tim" />
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="assets-table/assets/css/fresh-bootstrap-table.css" rel="stylesheet" />
-    <link href="assets-table/assets/css/demo.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="assets-table/assets/css/fresh-bootstrap-table.css" rel="stylesheet" />
+  <link href="assets-table/assets/css/demo.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/bootstrap-table/dist/bootstrap-table.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-table/dist/bootstrap-table.min.js"></script>
 
-    <!--  Just for demo purpose, do not include in your project   -->
-    <script src="assets-table/assets/js/demo/gsdk-switch.js"></script>
-    <script src="assets-table/assets/js/demo/jquery.sharrre.js"></script>
-    <script src="assets-table/assets/js/demo/demo.js"></script>
+  <!--  Just for demo purpose, do not include in your project   -->
+  <script src="assets-table/assets/js/demo/gsdk-switch.js"></script>
+  <script src="assets-table/assets/js/demo/jquery.sharrre.js"></script>
+  <script src="assets-table/assets/js/demo/demo.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        setInterval(function(){
-          $("#data").load("loadData.php")
-          }, 2000);
-      })
-    </script>
 </head>
 <body>
-   
 
 <div class="wrapper">
+
+  <a href="">
     <figure class="logo-container">
         <img class="logo img-fluid" src="images/logo.png" style="width:50">
     </figure>
-</div>
-
+  </a>
+  
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
@@ -82,41 +88,46 @@ include("dbConnection.php");
           Available colors for the full background: full-color-blue, full-color-azure, full-color-green, full-color-red, full-color-orange
           Available colors only for the toolbar: toolbar-color-blue, toolbar-color-azure, toolbar-color-green, toolbar-color-red, toolbar-color-orange
         -->
-          <div class="toolbar">
+          <div class="toolbar" style="display: flex;">
             <button id="parkinglotBtn" class="btn btn-default">Parking Lot</button>
-            <button id="switchBtn" class="btn btn-default">Switch</button>
+            <form method="post" action="export.php" class="text-center">
+              <button id="" class="btn btn-default" type="submit" name="">Logout</button>
+            </form>
           </div>
 
           <table id="fresh-table" class="table">
-          <thead >
-      <th data-field="id">ID</th>
-      <th data-field="name">License Plate</th>
-      <th data-field="salary">Time-in</th>
-      <th data-field="country">Time-out</th>
-      <th data-field="city">Date</th>
-    </thead>
-    <tbody id="data">
-      
-    </tbody>
+            <thead>
+              <th data-field="id">ID</th>
+              <th data-field="licenseplate" data-sortable="true">License Plate</th>
+              <th data-field="timein" data-sortable="true">Time-In</th>
+              <th data-field="timeout" data-sortable="true">Time-Out</th>
+              <th data-field="date">Date</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
           </table>
         </div>
+
+        <form method="post" action="export.php" class="text-center">
+          <input class="btn btn-primary" style="margin-bottom: 10px" type="submit" name="export" value="&#xf019 Export Data to CSV" class="button fa fa-download" />
+        </form>
 
       </div>
     </div>
   </div>
 </div>
 
-<form method="post" action="export.php" align="center">
-
-                     <input class="btn btn-primary my-4" type="submit" name="export" value="&#xf019 Export Data to CSV" class="button fa fa-download" />
-                </form>
-<!-- Footer -->
-<?php include "footer.php"; ?>
 </body>
   <script type="text/javascript">
     var $table = $('#fresh-table')
     var $parkinglotBtn = $('#parkinglotBtn')
-    var $switchBtn = $('#switchBtn')
 
     window.operateEvents = {
       'click .like': function (e, value, row, index) {
@@ -173,14 +184,9 @@ include("dbConnection.php");
       })
 
       $parkinglotBtn.click(function () {
-        //alert('You pressed on Alert')
         window.location.href = "parkingspots.php";
       })
 
-      $switchBtn.click(function () {
-        //alert('You pressed on Alert')
-        window.location.href = "addswitchpark.php";
-      })
     })
 
     $('#sharrreTitle').sharrre({
