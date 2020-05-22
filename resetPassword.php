@@ -1,8 +1,8 @@
 <?php 
 session_start();
-// if(!isset($_SESSION['email'])){
-// 	header('Location: forgotPassword.php?');
-// }
+if(!isset($_SESSION['email'])){
+	header('Location: forgotPassword.php?');
+}
 ?>
 
 <!DOCTYPE html>
@@ -40,46 +40,7 @@ session_start();
 </head>
 <body>
 <?php include 'nav.php' ?>
-<!-- Enter email (forgot password) -->
-<!-- <section id="login" >
-    <div class="container">
-      <div class="row">
-        <div >
-			    <div class="wow fadeInUp section-title" data-wow-delay="0.3s" >
-			      <h2>Password Reset</h2>
 
-					</div>
-
-				  <div class="login-form wow fadeInUp" data-wow-delay="0.7s">
-						<form id="resetForm" method="post" action="userValidatePassword">
-
-								<label for="password"><h4>Passsword:</h4></label>
-								<input type="password"  id ="edit-password" name="password">
-								display error message
-								<span id = "passwordError" style ="color:red"></span>
-
-
-								<label for="co_password"><h4>Confirm Password:</h4></label>
-								<input type="password"  id ="edit-co_password" name="co_password" required>
-								display error message
-								<span id = "errorCo_password" style ="color:red"></span>
-
-								<br><br>
-								<span id = "submitError" style ="color:red"></span>
-								<span id = "submitSuccess" style ="color:green"></span>
-
-
-								<div class="panel-body">
-								<input type="submit" id ="edit-saveNewPassword" name = "saveDetails"  value="Submit" required>
-								<p class ="form-message"></p>
-								</div>
-
-						</form>
-					 </div>
-			 </div>
-		 </div>
-	 </div>
-</section> -->
 <section class="section section-shaped section-lg">
 			
 			<div class="container">
@@ -96,7 +57,8 @@ session_start();
 											<div class="input-group-prepend">
 												<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 											</div>
-											<input class="form-control" placeholder="Passsword" type="email">
+									
+											<input id ="edit-password" class="form-control"  name="password" placeholder="Password"  type="password"  required>
 											<span id = "passwordError" style ="color:red"></span>
 										</div>
 									</div>
@@ -105,7 +67,7 @@ session_start();
 											<div class="input-group-prepend">
 												<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 											</div>
-											<input class="form-control text" placeholder="Confirm Password" type="password">
+											<input class="form-control text"  id ="edit-co_password" name="co_password" placeholder="Confirm Password" type="password"  required>
 											<span id = "errorCo_password" style ="color:red"></span>
 										</div>
 									</div>
@@ -113,7 +75,7 @@ session_start();
 								<span id = "submitError" style ="color:red"></span>
 								<span id = "submitSuccess" style ="color:green"></span>
 									<div class="text-center">
-										<input type="submit"  class="btn btn-primary my-4" id ="edit-saveNewPassword" name = "saveDetails"  value="Submit" required>
+									<input type="submit" class="btn btn-primary my-4" id ="edit-saveNewPassword" name = "saveDetails"  value="Submit" required>
 								<p class ="form-message"></p>
 									</div>
 								</form>
