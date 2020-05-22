@@ -1,18 +1,15 @@
 <?php
+    $month = date('m');
+	$day = date('d');
+	$year = date('Y');
 
-    $servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "softeng-iparker-db";
-	//create connection
-	$conn = mysqli_connect($servername, $username, $password, $dbname);
-	//check connection
-	if(!$conn){
-		die("Connection Failed:" . mysqli_connect_error());
-	}
-	
-	//get data
-	//get all information from  table
+	$today = $year . '-' . $month . '-' . $day;
+    $time = date("g:i:a");
+    
+    $fourRandom = rand(1000,9999);
+    $threeRandom = substr(str_shuffle(str_repeat("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 3)), 0, 3);
+
+    $plateNumber = $threeRandom . " " . $fourRandom;
 ?> 
 <html>
     <head>
@@ -77,21 +74,26 @@
                 <button type="button" class="btn btn-block btn-primary btn-lg m-auto mb-3" data-toggle="modal" data-target="#modal-default">Park now</button>
                 <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
                     <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
-                        <div class="modal-content">
+                        <div class="modal-content text-center">
                             <div class="modal-header">
-                                <h4 class="modal-title" id="modal-title-default">Thank you for using iParker!</h4>
+                                <h3 class="modal-title" id="modal-title-default">Thank you for using iParker!</h3>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">×</span>
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <p>Time In: 12:00 PM</p>
-                                <p>Parking Fee: 1 million</p>
-                                <p>Etc etc etc</p>
+                                <h6>Plate Number:</h6><p><?php echo $plateNumber?></p>
+                                <h6>Date:</h6> <p><?php echo $today?></p>
+                                <h6>Time In:</h6> <p><?php echo $time?></p>
+                                <h6>Parking Fee:</h6> <p> PHP 35</p>
                             </div>
                             <div class="modal-footer justify-content-center">
-                                <button type="button" class="btn btn-primary btn-lg">Done</button>
-                                <!--<button type="button" class="btn btn-link  ml-auto" data-dismiss="modal">Close</button>-->
+                            <form id="addToDb" action="addvehicledb.php" method="post">
+                                <input type="hidden" id="plateNumber" name="plateNumber" value="<?php echo $plateNumber ?>">
+                                <input type="hidden" id="timeIn" name="timeIn" value="<?php echo $time ?>">
+                                <input type="hidden" id="dateToday" name="dateToday" value="<?php echo $today ?>">
+                            </form>
+                                <button type="submit" id="done" form="addToDb" class="btn btn-primary btn-lg">Done</button>
                             </div>
                         </div>
                     </div>
@@ -105,38 +107,8 @@
         <!-- Scripts -->
         <?php include 'scripts.php' ?> 
 		
-		<!-- Scripts 
-			<script src="assets/js/jquery.min.js"></script>	
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script> 
-
-            <script>
-                var slideIndex = 1;
-                showSlides(slideIndex);
-
-                function plusSlides(n) {
-                showSlides(slideIndex += n);
-                }
-
-                function currentSlide(n) {
-                showSlides(slideIndex = n);
-                }
-
-                function goBack() {
-                    window.history.back();
-                }
-
-                function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                slides[slideIndex-1].style.display = "block";  
-                }
-            </script>-->
+		<script>
+            // setTimeout(function(){ document.getElementById("addToDb").submit(); }, 10000);
+        </script>
 	</body>
 </html>
