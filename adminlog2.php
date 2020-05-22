@@ -227,7 +227,10 @@
   </div>
 </div>
 
+<form method="post" action="export.php" align="center">
 
+                     <input class="btn btn-primary my-4" type="submit" name="export" value="&#xf019 Export Data to CSV" class="button fa fa-download" />
+                </form>
 <!-- Footer -->
 <?php include "footer.php"; ?>
 </body>
