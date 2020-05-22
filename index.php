@@ -5,32 +5,20 @@ $_SESSION['edit'] = 0;
 $_SESSION['vehicle'] = 0;
 $_SESSION['delete'] = 0;
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "softeng-iparker-db";
-//create connection
-	
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-//check connection
-	
-if(!$conn){
-	die("Connection Failed:" . mysqli_connect_error());
-}
-	
-//get data
-//get all information from  table
-	
-$query="SELECT * from vehicles";
-//run the query and store data in a variable
-$data = @mysqli_query($conn, $query);
 
-$numOfSlots = 76 - mysqli_num_rows($data);
 ?> 
 
 <html>
 	<head>
 		<?php include 'head.php' ?>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        setInterval(function(){
+          $("#numOfSlots").load("getNumOfVehicle.php")
+          }, 2000);
+      })
+    </script>
 	</head>
 
 	<body>
@@ -40,7 +28,7 @@ $numOfSlots = 76 - mysqli_num_rows($data);
 		<div class="section section-components">
 			<div class="container">
 				<div class="column align-content-center text-center">
-					<h1 class="mb-0">Number of Available Parking Slots:<h1 class="display-1 mb-0"><?php echo $numOfSlots?></h1></h1>
+					<h1 class="mb-0">Number of Available Parking Slots:<h1 class="display-1 mb-0" id ="numOfSlots"></h1></h1>
 					<a href="parkingspots.php" class="btn btn-primary btn-lg" type="button">View Parking Lot</a>
 				</div>
 			</div>
