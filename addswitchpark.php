@@ -5,7 +5,7 @@
     
 	<body>
 		<!-- Navbar primary -->
-        <?php include 'nav-admin.php' ?>
+        <?php include 'nav.php' ?>
 
         <div class="container mr-auto ml-auto mt-5 mb-6">
             <h1>Simulated Hardware Switch</h1>
