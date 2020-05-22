@@ -51,7 +51,7 @@ if(!isset($_SESSION['email'])){
 								<div class="text-center text-muted mb-4">
 									<h3>Password Reset</h3>
 								</div>
-								<form id="resetForm" method="post" action="userValidatePassword">
+								<form id="resetForm" method="post" action="userValidatePassword.php">
 									<div class="form-group mb-3">
 										<div class="input-group input-group-alternative">
 											<div class="input-group-prepend">

@@ -17,12 +17,11 @@
 	//make sql
 	$sql="SELECT * FROM accounts WHERE email='$email' AND password='$password'";
 	//check if SQL is correctly formed
-									
 	$query = mysqli_query($conn, $sql); 
 
 	if(mysqli_num_rows($query) > 0){
 		$_SESSION['login'] = 2;
-		header("Location:parkmanage.php");
+		header("Location:adminlog2.php");
 		exit;
 	} else{
 		$_SESSION['login'] = 1;

@@ -162,7 +162,7 @@ var content = '';
   $("#submitSuccess").html(
 function myFunction() {
   alert("You successfully changed yours password");
-  window.location.href = "index.php";
+  window.location.href = "admin-login.php";
 }
 );
   $("#submitSuccess").show();
