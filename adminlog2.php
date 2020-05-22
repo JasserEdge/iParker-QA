@@ -1,5 +1,10 @@
 <?php
 include("dbConnection.php");
+session_start();
+
+// if ($_SESSION['login'] != 1){
+// 	header("Location:admin-login.php");
+// }
 ?>
 
 <!doctype html>
@@ -65,6 +70,15 @@ include("dbConnection.php");
   <script src="assets-table/assets/js/demo/jquery.sharrre.js"></script>
   <script src="assets-table/assets/js/demo/demo.js"></script>
 
+  <!-- fetch data -->
+  
+    <script>
+      // $(document).ready(function() {
+      //   setInterval(function(){
+      //     $("#data").load("loadData.php")
+      //     }, 1000);
+      // })
+    </script>
 </head>
 <body>
 
@@ -90,9 +104,10 @@ include("dbConnection.php");
         -->
           <div class="toolbar" style="display: flex;">
             <button id="parkinglotBtn" class="btn btn-default">Parking Lot</button>
-            <form method="post" action="export.php" class="text-center">
+            <form method="post" action="logout.php" class="text-center">
               <button id="" class="btn btn-default" type="submit" name="">Logout</button>
             </form>
+            <button id="" onClick="history.go(0);" class="btn btn-default" type="submit" name="">Refresh</button>
           </div>
 
           <table id="fresh-table" class="table">
@@ -103,14 +118,23 @@ include("dbConnection.php");
               <th data-field="timeout" data-sortable="true">Time-Out</th>
               <th data-field="date">Date</th>
             </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tbody >
+            <?php 
+              $result = mysqli_query($con,"SELECT * FROM vehicles ORDER BY parking_id DESC");
+              while($row = mysqli_fetch_assoc($result)){
+              ?>
+                  
+            <tr>
+                <td><?php echo $row['parking_id']; ?></td>
+                <td><?php echo $row['license_plate']; ?></td>
+                <td><?php echo $row['time_in']; ?></td>
+                <td><?php echo $row['time_out']; ?></td>
+                <td><?php echo $row['date']; ?></td>
               </tr>
+
+          <?php   
+      }
+      ?>       
             </tbody>
           </table>
         </div>
@@ -166,7 +190,7 @@ include("dbConnection.php");
         toolbar: '.toolbar',
 
         search: true,
-        showRefresh: true,
+        showRefresh: false,
         showToggle: true,
         showColumns: true,
         pagination: true,

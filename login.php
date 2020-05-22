@@ -20,11 +20,10 @@
 	$query = mysqli_query($conn, $sql); 
 
 	if(mysqli_num_rows($query) > 0){
-		$_SESSION['login'] = 2;
+		$_SESSION['login'] = 1;
 		header("Location:adminlog2.php");
 		exit;
 	} else{
-		$_SESSION['login'] = 1;
 		mysqli_error($conn);
 		header("Location:index.php");
 		exit;
