@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2020 at 11:50 AM
+-- Generation Time: May 22, 2020 at 08:14 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -50,20 +50,10 @@ INSERT INTO `accounts` (`id`, `email`, `password`) VALUES
 CREATE TABLE `vehicles` (
   `parking_id` int(11) NOT NULL,
   `license_plate` varchar(50) NOT NULL,
-  `vehicle_type` varchar(50) NOT NULL,
-  `parking_spot` varchar(50) NOT NULL,
   `time_in` varchar(50) NOT NULL,
   `time_out` varchar(50) NOT NULL,
-  `date` varchar(50) NOT NULL,
-  `status` tinyint(1) NOT NULL
+  `date` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `vehicles`
---
-
-INSERT INTO `vehicles` (`parking_id`, `license_plate`, `vehicle_type`, `parking_spot`, `time_in`, `time_out`, `date`, `status`) VALUES
-(23, 'BAD-1202', 'MOTORCYCLE', '4-2nd', '2:52:pm', '', '2020-05-17', 0);
 
 --
 -- Indexes for dumped tables
@@ -95,7 +85,7 @@ ALTER TABLE `accounts`
 -- AUTO_INCREMENT for table `vehicles`
 --
 ALTER TABLE `vehicles`
-  MODIFY `parking_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `parking_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
