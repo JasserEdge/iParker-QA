@@ -1,13 +1,3 @@
-<?php
-session_start();
-
-$_SESSION['edit'] = 0;
-$_SESSION['vehicle'] = 0;
-$_SESSION['delete'] = 0;
-
-
-?> 
-
 <html>
 	<head>
 		<?php include 'head.php' ?>
@@ -17,7 +7,8 @@ $_SESSION['delete'] = 0;
         setInterval(function(){
           $("#numOfSlots").load("getNumOfVehicle.php")
           }, 2000);
-      })
+      });
+
     </script>
 	</head>
 
