@@ -1,5 +1,8 @@
 <?php 
 session_start();
+
+if($_SESSION["slotsTaken"] == NULL){
+
 $_SESSION["spot11"] = 0;
 $_SESSION["spot12"] = 0;
 $_SESSION["spot13"] = 0;
@@ -19,6 +22,7 @@ $_SESSION["spot34"] = 0;
 $_SESSION["spot35"] = 0;
 
 $_SESSION["slotsTaken"] = 0;
+}
 
 ?>
 
