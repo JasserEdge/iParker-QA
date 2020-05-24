@@ -172,8 +172,8 @@ session_start();
                             <span class="custom-toggle-slider rounded-circle" ></span>
                         </form>
                     </label>
-                    <button type="submit" form="form33" name="spotOne" value="3-3" class="btn btn-warning btn-sm">ON</button>
-                    <button type="submit" form="form33" name="spotOne" value="OFF33" class="btn btn-success btn-sm">OFF</button>
+                    <button type="submit" form="form33" name="spot33" value="3-3" class="btn btn-warning btn-sm">ON</button>
+                    <button type="submit" form="form33" name="spot33" value="OFF33" class="btn btn-success btn-sm">OFF</button>
                 </div>
                 <div class="d-flex flex-row">
                     <small class="text-uppercase font-weight-bold mr-2">4</small>
