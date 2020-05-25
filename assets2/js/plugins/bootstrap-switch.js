@@ -749,7 +749,7 @@
     state: true,
     size: null,
     animate: true,
-    disabled: false,
+    disabled: true,
     readonly: false,
     indeterminate: false,
     inverse: false,

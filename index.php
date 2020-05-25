@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
     $month = date('m');
 	$day = date('d');
@@ -11,6 +12,36 @@
 
     $plateNumber = $threeRandom . " " . $fourRandom;
 ?> 
+=======
+<?php 
+session_start();
+
+if($_SESSION["slotsTaken"] == NULL){
+
+$_SESSION["spot11"] = 0;
+$_SESSION["spot12"] = 0;
+$_SESSION["spot13"] = 0;
+$_SESSION["spot14"] = 0;
+$_SESSION["spot15"] = 0;
+
+$_SESSION["spot21"] = 0;
+$_SESSION["spot22"] = 0;
+$_SESSION["spot23"] = 0;
+$_SESSION["spot24"] = 0;
+$_SESSION["spot25"] = 0;
+
+$_SESSION["spot31"] = 0;
+$_SESSION["spot32"] = 0;
+$_SESSION["spot33"] = 0;
+$_SESSION["spot34"] = 0;
+$_SESSION["spot35"] = 0;
+
+$_SESSION["slotsTaken"] = 0;
+}
+
+?>
+
+>>>>>>> a5a3f7b4f4d64b13b9b7b03820926a929b296d29
 <html>
     <head>
 		<?php include 'head.php' ?>
@@ -19,7 +50,8 @@
         setInterval(function(){
           $("#numOfSlots").load("getNumOfVehicle.php")
           }, 2000);
-      })
+      });
+
     </script>
 	</head>
         

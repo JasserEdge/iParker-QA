@@ -1,10 +1,10 @@
 <?php
 include("dbConnection.php");
 session_start();
+if(!isset($_SESSION['login'])){
+  header("Location:index.php");
 
-// if ($_SESSION['login'] != 1){
-// 	header("Location:admin-login.php");
-// }
+}
 ?>
 
 <!doctype html>
@@ -112,11 +112,11 @@ session_start();
 
           <table id="fresh-table" class="table">
             <thead>
-              <th data-field="id">ID</th>
+              <th data-field="id" data-sortable="true">ID</th>
               <th data-field="licenseplate" data-sortable="true">License Plate</th>
               <th data-field="timein" data-sortable="true">Time-In</th>
               <th data-field="timeout" data-sortable="true">Time-Out</th>
-              <th data-field="date">Date</th>
+              <th data-field="date" data-sortable="true">Date</th>
             </thead>
             <tbody >
             <?php 

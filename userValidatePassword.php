@@ -93,7 +93,7 @@ if(errorEmpty == true){
 
 if(errorPassword == true){
 
-  $("#passwordError").html("Minimum password length is atleast 8");
+  $("#passwordError").html("Minimum password length is at least 8");
   $("#passwordError").show();
   $("#submitSuccess").hide();
 
@@ -106,7 +106,7 @@ if(errorPassword == true){
 
 if(errorPassword_co == true){
 
-  $("#errorCo_password").html("Minimum password length is atleast 8");
+  $("#errorCo_password").html("Minimum password length is at least 8");
   $("#errorCo_password").show();
   $("#submitSuccess").hide();
 
@@ -130,30 +130,33 @@ if(errorConfirm == true){
 }
 
 
-if(!errorEmpty && !errorPassword && !errorPassword_co && !errorConfirm){
+if(errorEmpty == false && errorPassword == false && errorPassword_co == false && errorConfirm == false){
 
   <?php
+ if (strlen($password)>= 8 && strlen($password_co) >= 8){
+  if (isset($password, $password_co,$_SESSION['email'])) {
+    $new_pass = mysqli_real_escape_string($con, $password);
+    $new_pass_c = mysqli_real_escape_string($con, $password_co);
 
-      if (isset($password, $password_co,$_SESSION['email'])) {
-          $new_pass = mysqli_real_escape_string($con, $password);
-          $new_pass_c = mysqli_real_escape_string($con, $password_co);
-        //  $token =;  // Grab to token that came from the email link
+        if ($new_pass != $new_pass_c) {
+          $invalid = 1;
+        }
+        // $new_pass = password_hash($new_pass, PASSWORD_DEFAULT);
 
-              if ($new_pass != $new_pass_c) {
-                $invalid = 1;
-              }
-              // $new_pass = password_hash($new_pass, PASSWORD_DEFAULT);
+        if ($stmt = $con->prepare("UPDATE accounts SET password=? WHERE email=?")){
 
-              if ($stmt = $con->prepare("UPDATE accounts SET password=? WHERE email=?")){
+         $stmt->bind_param('ss', $new_pass,$_SESSION['email']);
+         $stmt->execute();
 
-               $stmt->bind_param('ss', $new_pass,$_SESSION['email']);
-               $stmt->execute();
+          unset($_SESSION['email']);
 
-                unset($_SESSION['email']);
+       }
 
-             }
+}
+ }
 
-      }
+ 
+
 
 
   ?>
@@ -161,7 +164,7 @@ if(!errorEmpty && !errorPassword && !errorPassword_co && !errorConfirm){
 var content = '';
   $("#submitSuccess").html(
 function myFunction() {
-  alert("You successfully changed yours password");
+  alert("You successfully changed your password");
   window.location.href = "admin-login.php";
 }
 );

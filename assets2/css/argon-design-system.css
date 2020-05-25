@@ -18566,16 +18566,17 @@ a.btn-icon-only {
 }
 
 .custom-toggle input:disabled:checked+.custom-toggle-slider {
-  border: 1px solid #e9ecef;
+  border: 1px solid #5CB709;
 }
 
 .custom-toggle input:disabled:checked+.custom-toggle-slider:before {
-  background-color: #8a98eb;
+  border: 1px solid #5CB709;
+  background: #5CB709;
 }
 
 .custom-toggle-slider {
   position: absolute;
-  cursor: pointer;
+  /*cursor: pointer;*/
   top: 0;
   left: 0;
   right: 0;
@@ -24390,4 +24391,17 @@ pre>code.highlight {
   background-color: #42a5ff;
 }
 
+.switch-r {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+} 
+
+@media (min-width: 576px) {
+  .switch-r {
+    flex-flow: row;
+  } 
+}
+
 /*# sourceMappingURL=kit-free.css.map */
+

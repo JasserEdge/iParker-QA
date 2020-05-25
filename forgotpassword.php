@@ -17,7 +17,7 @@
                             "<div class='col-lg-4 col-sm-6 m-auto'>
                                 <div class='alert alert-danger alert-dismissible fade show' role='alert'>
                                     <!--<span class='alert-inner--icon'><i class='ni ni-support-16'></i></span>-->
-                                    <span class='alert-inner--text'><strong>Invalid Email!</strong> Please Try Again!</span>
+                                    <span class='alert-inner--text'><strong>Incorrect email!</strong> Please Try Again!</span>
                                     <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                                         <span aria-hidden='true'>&times;</span>
                                     </button>
