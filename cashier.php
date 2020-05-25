@@ -56,17 +56,19 @@
                                             <button type="submit" id="submit" class="ml-1 btn btn-primary btn-lg mt-4" data-toggle="modal" data-target="#exampleModalCenter">Pay</button>
                                         </div>
                                         
-                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="exampleModalLongTitle">CASHIER</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
                                             <div class="modal-body">
                                                 <h2>CASH REGISTER OPENED</h2>
+                                                <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal" aria-label="Close">
+                                                Close
+                                                </button>
                                             </div>
                                             </div>
                                         </div>
