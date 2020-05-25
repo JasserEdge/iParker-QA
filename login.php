@@ -19,9 +19,23 @@
 	$query = mysqli_query($conn, $sql); 
 
 	if(mysqli_num_rows($query) > 0){
-		$_SESSION['login'] = 1;
-		header("Location:adminlog2.php");
-		exit;
+		
+		while($row = @mysqli_fetch_array($query)){
+			$emailtemp= $row['email'];
+			$passtemp = $row['password'];
+		}
+			if(strcmp($passtemp,$password) == 0  ){
+				$_SESSION['login'] = 1;
+				header("Location:adminlog2.php");
+				exit;
+				
+			}else{
+				header("Location:admin-login.php?msg=1");
+			}
+
+	
+	}else if($_POST['email'] == NULL || $_POST['password'] == NULL){
+		header("Location:admin-login.php?msg=2");
 	} else{
 		mysqli_error($conn);
 		

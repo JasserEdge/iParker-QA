@@ -9,6 +9,11 @@
 		<?php include 'nav.php' ?>
 	            
 		<?php 
+			session_start();
+
+		if (isset($_SESSION['login'] )){
+			header("Location:adminlog2.php");
+		}
                 if (isset($_GET['msg'])){
                     if ($_GET['msg'] == 1) {
                         echo 
@@ -21,7 +26,18 @@
                                     </button>
                                 </div>
                             </div>";
-                    }
+                    }else if ($_GET['msg'] == 2) {
+						echo 
+						"<div class='col-lg-4 col-sm-6 m-auto'>
+                                <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                    <!--<span class='alert-inner--icon'><i class='ni ni-support-16'></i></span>-->
+                                    <span class='alert-inner--text'><strong>Please enter your email and password </strong></span>
+                                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                                        <span aria-hidden='true'>&times;</span>
+                                    </button>
+                                </div>
+                            </div>";
+					}
                 }
             ?>
 		<!--<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>-->
@@ -61,7 +77,7 @@
 											<div class="input-group-prepend">
 												<span class="input-group-text"><i class="ni ni-email-83"></i></span>
 											</div>
-											<input class="form-control" placeholder="Email" type="email" name="email" required>
+											<input class="form-control" placeholder="Email" type="email" name="email" >
 										</div>
 									</div>
 									<div class="form-group focused">
@@ -69,7 +85,7 @@
 											<div class="input-group-prepend">
 												<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 											</div>
-											<input class="form-control text" placeholder="Password" type="password" name="password" required>
+											<input class="form-control text" placeholder="Password" type="password" name="password" >
 										</div>
 									</div>
 
