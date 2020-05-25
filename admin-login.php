@@ -7,7 +7,7 @@
 	<body>
 		<!-- Nav -->
 		<?php include 'nav.php' ?>
-	           
+	            
 		<?php 
                 if (isset($_GET['msg'])){
                     if ($_GET['msg'] == 1) {
@@ -72,9 +72,11 @@
 											<input class="form-control text" placeholder="Password" type="password" name="password" required>
 										</div>
 									</div>
-									<div class="custom-control custom-control-alternative custom-checkbox">
-										<input class="custom-control-input" id="customCheckLogin" type="checkbox">
-										<label class="custom-control-label" for="customCheckLogin"><span>Remember me</span></label>
+
+									<div class="row mt-3">
+										<div class="col-6">
+											<a href="forgotpassword.php" class="text"><small>Forgot password?</small></a>
+										</div>
 									</div>
 									
 									<div class="text-center">
@@ -82,15 +84,7 @@
 									</div>
 								</form>
 							</div>
-						</div>
-						<div class="row mt-3">
-							<div class="col-6">
-								<a href="forgotpassword.php" class="text"><small>Forgot password?</small></a>
-							</div>
-							<div class="col-6 text-right">
-								<a href="#" class="text"><small>Create new account</small></a>
-							</div>
-						</div>
+						</div>	
 					</div>
 				</div>
 			</div>
