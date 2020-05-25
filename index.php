@@ -132,6 +132,8 @@ $_SESSION["slotsTaken"] = 0;
                     </div>
                 </div>
             </div>
+
+            <button class="btn btn-primary btn-sm">Go Back...</button>
             
         </div>
                 
