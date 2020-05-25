@@ -1,22 +1,19 @@
 <?php
     session_start();
-
-    $month = date('m');
-	$day = date('d');
-	$year = date('Y');
-
-	$today = $year . '-' . $month . '-' . $day;
-    $time = date("g:i:a");
-    
-    $fourRandom = rand(1000,9999);
-    $threeRandom = substr(str_shuffle(str_repeat("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 3)), 0, 3);
-
-    $plateNumber = $threeRandom . " " . $fourRandom;
     $numberTaken = 0;
 ?> 
 <html>
     <head>
 		<?php include 'head.php' ?>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        setInterval(function(){
+          $("#numOfSlots").load("getNumOfVehicle.php")
+          }, 2000);
+      });
+
+    </script>
 	</head>
         
 	<body>
@@ -25,7 +22,7 @@
     
         <div class="section section-components">
             <div class="container">
-                <h3 class="h4 font-weight-bold mb-4">Available Parking Slots</h4>
+            <h2 class="mb-0 text-center">Number of Available Parking Slots:<p class="display-1 mb-0" id ="numOfSlots"></p></h2>
                 <div class="column justify-content-center">
                     <div class="nav-wrapper">
                         <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-text" role="tablist">
@@ -165,33 +162,7 @@
             <?php $_SESSION["slotsTaken"] = $numberTaken;?>
 
             <div class="col-md-4 m-auto pt-4">
-                <button type="button" class="btn btn-block btn-primary btn-lg m-auto mb-3" data-toggle="modal" data-target="#modal-default">Park now</button>
-                <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
-                    <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
-                        <div class="modal-content text-center">
-                            <div class="modal-header">
-                                <h3 class="modal-title" id="modal-title-default">Thank you for using iParker!</h3>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <h6>Plate Number:</h6><p><?php echo $plateNumber?></p>
-                                <h6>Date:</h6> <p><?php echo $today?></p>
-                                <h6>Time In:</h6> <p><?php echo $time?></p>
-                                <h6>Parking Fee:</h6> <p> PHP 35</p>
-                            </div>
-                            <div class="modal-footer justify-content-center">
-                            <form id="addToDb" action="addvehicledb.php" method="post">
-                                <input type="hidden" id="plateNumber" name="plateNumber" value="<?php echo $plateNumber ?>">
-                                <input type="hidden" id="timeIn" name="timeIn" value="<?php echo $time ?>">
-                                <input type="hidden" id="dateToday" name="dateToday" value="<?php echo $today ?>">
-                            </form>
-                                <button type="submit" id="done" form="addToDb" class="btn btn-primary btn-lg">Done</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <button onclick='goBack()' class='btn btn-block btn-primary btn-lg m-auto mb-3'>Go Back</button>
             </div>
         </div>
                 
@@ -202,6 +173,9 @@
         <?php include 'scripts.php' ?> 
 		
 		<script>
+            function goBack() {
+                window.history.back();
+            }
             // setTimeout(function(){ document.getElementById("addToDb").submit(); }, 10000);
         </script>
 	</body>

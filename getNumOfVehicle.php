@@ -4,7 +4,7 @@ session_start();
     $numOfSlots = 15 - $_SESSION["slotsTaken"];
     echo $numOfSlots;
  }else{
-     echo "15";
+    echo "15";
  }
 
 ?>

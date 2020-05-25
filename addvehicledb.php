@@ -19,7 +19,7 @@
 	$sql="INSERT into vehicles(license_plate, time_in, date) values ('" . $license . "','" . $timeIn . "','" . $date . "');" ;
 	//run the query 
 	if(mysqli_query($conn, $sql)){
-		header("Location:parkingspots.php");
+		header("Location:index.php");
 		exit;
 	} else{
 		echo("Input data is fail");
