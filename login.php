@@ -11,8 +11,8 @@
 		die("Connection Failed:" . mysqli_connect_error());
 	}
 	//get data from form
-	$email = $_POST['email'];
-	$password = $_POST['password'];
+	$email = test_input($_POST['email']);
+	$password = test_input($_POST['password']);
 	//make sql
 	$sql="SELECT * FROM accounts WHERE email='$email' AND password='$password'";
 	//check if SQL is correctly formed
@@ -24,10 +24,20 @@
 		exit;
 	} else{
 		mysqli_error($conn);
-		header("Location:index.php");
+		
+		header("Location:admin-login.php?msg=1");
 		exit;
 	}
 	mysqli_close($conn);
+
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data, ENT_QUOTES);
+  return $data;
+}
+
 ?>
 									
 		

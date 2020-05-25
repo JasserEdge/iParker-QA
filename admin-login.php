@@ -7,7 +7,23 @@
 	<body>
 		<!-- Nav -->
 		<?php include 'nav.php' ?>
-
+	           
+		<?php 
+                if (isset($_GET['msg'])){
+                    if ($_GET['msg'] == 1) {
+                        echo 
+                            "<div class='col-lg-4 col-sm-6 m-auto'>
+                                <div class='alert alert-danger alert-dismissible fade show' role='alert'>
+                                    <!--<span class='alert-inner--icon'><i class='ni ni-support-16'></i></span>-->
+                                    <span class='alert-inner--text'><strong>Incorrect email or password</strong> Please try again.</span>
+                                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                                        <span aria-hidden='true'>&times;</span>
+                                    </button>
+                                </div>
+                            </div>";
+                    }
+                }
+            ?>
 		<!--<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>-->
 			
 		<!-- Banner 
