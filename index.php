@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
     $month = date('m');
 	$day = date('d');
@@ -12,7 +11,6 @@
 
     $plateNumber = $threeRandom . " " . $fourRandom;
 ?> 
-=======
 <?php 
 session_start();
 
@@ -41,7 +39,6 @@ $_SESSION["slotsTaken"] = 0;
 
 ?>
 
->>>>>>> a5a3f7b4f4d64b13b9b7b03820926a929b296d29
 <html>
     <head>
 		<?php include 'head.php' ?>
