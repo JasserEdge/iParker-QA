@@ -58,7 +58,7 @@ if(!isset($_SESSION['email'])){
 												<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 											</div>
 									
-											<input id ="edit-password" class="form-control"  name="password" placeholder="Password"  type="password"  required>
+											<input id ="edit-password" class="form-control"  name="password" placeholder="Password"  type="password" minlength="8" required>
 											<span id = "passwordError" style ="color:red"></span>
 										</div>
 									</div>
@@ -67,7 +67,7 @@ if(!isset($_SESSION['email'])){
 											<div class="input-group-prepend">
 												<span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
 											</div>
-											<input class="form-control text"  id ="edit-co_password" name="co_password" placeholder="Confirm Password" type="password"  required>
+											<input class="form-control text"  id ="edit-co_password" name="co_password" placeholder="Confirm Password" type="password" minlength="8" required>
 											<span id = "errorCo_password" style ="color:red"></span>
 										</div>
 									</div>
