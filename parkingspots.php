@@ -1,6 +1,30 @@
 <?php
     session_start();
     $numberTaken = 0;
+
+    if(!isset($_SESSION['firstRun'])){
+        $_SESSION['firstRun'] = 1;
+        
+        $_SESSION["spot11"] = 0;
+        $_SESSION["spot12"] = 0;
+        $_SESSION["spot13"] = 0;
+        $_SESSION["spot14"] = 0;
+        $_SESSION["spot15"] = 0;
+    
+        $_SESSION["spot21"] = 0;
+        $_SESSION["spot22"] = 0;
+        $_SESSION["spot23"] = 0;
+        $_SESSION["spot24"] = 0;
+        $_SESSION["spot25"] = 0;
+    
+        $_SESSION["spot31"] = 0;
+        $_SESSION["spot32"] = 0;
+        $_SESSION["spot33"] = 0;
+        $_SESSION["spot34"] = 0;
+        $_SESSION["spot35"] = 0;
+    
+        $_SESSION["slotsTaken"] = 0;
+    }
 ?> 
 <html>
     <head>
