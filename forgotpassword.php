@@ -35,12 +35,12 @@
                                 <div class="card-body px-lg-5 py-lg-5">
                                     <div class="text-center text-muted mb-4">
                                         <h3>Password Reset</h3>
-                                        <small class="font-weight-bold">Enter your email and we'll send you a link to reset your password</small>
+                                        <small class="font-weight-bold">Enter your email to reset your password</small>
                                     </div>
                                     <form id="login-form" method="post" action="forgotPasswordValidation.php" class="form-group d-flex flex-column align-items-center">
                                         <input name="email" type="email" placeholder="Email" class="form-control" required/>
                                         <span id = "submitError" style ="color:red"></span>
-                                        <button type="submit" name="forgot_password" id="submit" class="ml-1 btn btn-primary btn-lg mt-4">Send link</button>
+                                        <button type="submit" name="forgot_password" id="submit" class="ml-1 btn btn-primary btn-lg mt-4">Submit</button>
                                     </form>
                                 </div>
                             </div>

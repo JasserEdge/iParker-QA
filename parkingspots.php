@@ -198,7 +198,7 @@
 		
 		<script>
             function goBack() {
-                window.history.back();
+                window.location.href = "adminlog2.php";
             }
             // setTimeout(function(){ document.getElementById("addToDb").submit(); }, 10000);
         </script>

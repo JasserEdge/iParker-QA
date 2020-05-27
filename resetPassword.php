@@ -75,7 +75,7 @@ if(!isset($_SESSION['email'])){
 								<span id = "submitError" style ="color:red"></span>
 								<span id = "submitSuccess" style ="color:green"></span>
 									<div class="text-center">
-									<input type="submit" class="btn btn-primary my-4" id ="edit-saveNewPassword" name = "saveDetails"  value="Submit" required>
+									<input type="submit" class="btn btn-primary my-4" id ="edit-saveNewPassword" name = "saveDetails"  value="Reset" required>
 								<p class ="form-message"></p>
 									</div>
 								</form>

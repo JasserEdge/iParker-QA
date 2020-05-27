@@ -57,18 +57,17 @@
                                         </div>
                                         
                                         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-dialog modal-dialog-centered text-center" role="document">
                                             <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle">CASHIER</h5>
+                                                <h5 class="modal-title" >CASHIER TRANSACTION COMPLETE</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <h2>CASH REGISTER OPENED</h2>
-                                                <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal" aria-label="Close">
-                                                Close
-                                                </button>
+                                                <h2>BARRIER OPENED</h2>
+
+                                                <button type="button" onClick="window.location.reload();" class="btn btn-block btn-primary btn-lg m-auto mb-3" data-dismiss="modal" aria-label="Close">Exit</button>
                                             </div>
                                             </div>
                                         </div>
